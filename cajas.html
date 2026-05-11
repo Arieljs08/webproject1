@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>My page</title>
+    <link rel="icon" type="image-x/icon" href="src/Gemini_Generated_Image_oobl17oobl17oobl-removebg-preview.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=BJCree:wght@400;500;600;700&family=Habibi&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Playwrite+DE+SAS:wght@100..400&display=swap" rel="stylesheet">
+
+    <style>
+        body{
+            padding: 0;
+            margin: 0;
+            margin-top: 0;
+            
+            font-family: "Habibi", serif;;
+        }
+        p{
+            margin: 0;
+            padding: 0;
+        }
+        h1,h2,h3{
+            margin: 0;
+            padding: 0;
+        }
+        
+        header{
+            height: 25%;
+            min-width: 160px;
+            background-color: #F2A900;
+            margin: 0;
+            padding: 2%;
+            text-align: center;
+        }
+        nav{
+            height: 10%;
+            background-color: #006B3F;
+        }
+        nav ul{
+            list-style-type: none;
+            padding: 1%;
+            margin: 0;
+            text-align: center;
+        }
+        nav li {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            line-height: 14px;
+        }
+        nav li a{
+            color: white;
+            text-decoration: none;
+            margin-right: 50px;
+            font-size: 20px;
+
+        }
+        a:hover{
+            text-decoration: underline;
+        }
+        main{
+            height: 100%;
+            background-color: #ffffff;
+        }
+        main aside{
+            height: 40%;
+            height: 40%;
+            float: right;
+            margin: 0px 29px 0 0px;
+        }
+        main aside iframe{
+            border-radius: 8px;
+        }
+        section{
+            background-color: rgb(241, 241, 241);
+            border-left: 4px solid slateblue;
+            border-radius: 8px 8px 8px 0px;
+            margin: 18px;
+            margin-top: 25px;
+            padding: 10px 10px 10px 14px;
+            box-shadow: 5px 5px #003753bd;
+        }
+        section p{
+            margin: 8px;
+        }
+        main img {
+            width: 700px;
+            height: auto;
+        }
+        .tarjeta-lugar {
+            background-color: #FFFFFF;
+            border-left: 5px solid slateblue;
+            border-radius: 8px;
+            padding: 20px;
+            box-shadow: 0px 4px 15px rgba(106, 90, 205, 0.2);
+            margin-bottom: 20px;
+        }
+        .tarjeta-lugar h2 { color: slateblue; margin-bottom: 10px; }
+        .tarjeta-lugar p { line-height: 1.6; color: #555; }
+        .imagen-lugar { width: 100%; height: 300px; object-fit: cover; border-radius: 8px; margin-bottom: 20px; }
+        footer{
+            height: 10%;
+            background-color: #003853;
+            color: white;
+            font-size: 20px;
+            padding: 8px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Pagina Turística del Ecuador</h1>
+    </header>
+    <nav>
+        <ul>
+            <li>
+                <a href="index.html">Incio</a>
+                <a href="lugares.html">Lugares Turísticos</a>
+            </li>
+        </ul>
+    </nav>
+        <main>
+            <h1>Parque Nacional El Cajas</h1>
+            <figure>
+                <img src="src/cajas.jpg" alt="cajas" >
+            </figure>
+            
+            <section class="tarjeta-lugar">
+                <h2>Acerca del lugar</h2>
+                <p>A pocos kilómetros de Cuenca, este santuario de páramo andino es un espectáculo de la naturaleza. Alberga más de 235 lagunas de origen glaciar conectadas por riachuelos. Es un lugar místico, donde la niebla abraza las montañas y los bosques de Polylepis invitan a realizar caminatas.</p>
+            </section>
+
+            <section class="tarjeta-lugar">
+                <h2>Clima</h2>
+                <label for="humedad-cajas">Probabilidad de frío y neblina:</label>
+                <progress id="humedad-cajas" value="90" max="100">90%</progress>
+            </section>
+
+            <section class="tarjeta-lugar">
+                <h2>Ubicación Oficial</h2>
+                <address>
+                    Vía Cuenca - Molleturo - Naranjal Km 30.<br>
+                    Cantón Cuenca, Azuay, Ecuador.
+                </address>
+            </section>
+        </main>
+    <footer>
+        <p>Derechos Reservados - 2026</p>
+    </footer>
+</body>
+</html>

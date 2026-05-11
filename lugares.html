@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Turismo</title>
+    <link rel="icon" type="image-x/icon" href="src/Gemini_Generated_Image_oobl17oobl17oobl-removebg-preview.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=BJCree:wght@400;500;600;700&family=Habibi&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Playwrite+DE+SAS:wght@100..400&display=swap" rel="stylesheet">
+
+    <style>
+        body{
+            padding: 0;
+            margin: 0;
+            margin-top: 0;
+            
+            font-family: "Habibi", serif;;
+        }
+        p{
+            margin: 0;
+            padding: 0;
+        }
+        h1,h2,h3{
+            margin: 0;
+            padding: 0;
+        }
+        
+        header{
+            height: 25%;
+            min-width: 160px;
+            background-color: #F2A900;
+            margin: 0;
+            padding: 2%;
+            text-align: center;
+        }
+        nav{
+            height: 10%;
+            background-color: #006B3F;
+        }
+        nav ul{
+            list-style-type: none;
+            padding: 1%;
+            margin: 0;
+            text-align: center;
+        }
+        nav li {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            line-height: 14px;
+        }
+        nav li a{
+            color: white;
+            text-decoration: none;
+            margin-right: 50px;
+            font-size: 20px;
+
+        }
+        a:hover{
+            text-decoration: underline;
+        }
+        main{
+            height: 100%;
+            background-color: #ffffff;
+        }
+        main aside{
+            height: 40%;
+            height: 40%;
+            float: right;
+            margin: 0px 29px 0 0px;
+        }
+        main aside iframe{
+            border-radius: 8px;
+        }
+        section{
+            background-color: rgb(241, 241, 241);
+            border-left: 4px solid slateblue;
+            border-radius: 8px 8px 8px 0px;
+            margin: 18px;
+            margin-top: 25px;
+            padding: 10px 10px 10px 14px;
+            box-shadow: 5px 5px #003753bd;
+            
+        }
+        section p{
+            margin: 8px;
+        }
+        section.b{
+            background-color:rgb(218, 216, 216);
+            margin: 8px;
+            
+        }
+        div.contenedor{
+            height: 80%;
+            width: 99.9%;
+            border: 1px solid ;
+        }
+        div.label{
+            height: 15%;
+            width: 21%;
+            float: left;
+            
+        }
+        div.input{
+            min-height: 60px;
+            width: 78.03%;
+            float: left;
+            
+        }
+        section.izq{
+            width: 66%;
+            height: 100%;
+            float: left;
+        }
+        section.dere{
+            width: 25%;
+            float: right;
+        }
+        
+        section table{
+            width: 98%;
+            height: 10%;
+
+        }
+        main img{
+            width: auto;
+            height: auto;
+        }
+        section figcaption{
+            text-align: center;
+        }
+        section figure{
+            padding: 0;
+            margin: 0;
+
+        }
+        mark{
+            background-color: rgb(241, 211, 253);
+            border-radius: 8px;
+            padding: 2px 9px 2px 9px;
+            
+        }
+        footer{
+            clear: both;
+            height: 10%;
+            background-color: #003853;
+            color: white;
+            font-size: 20px;
+            padding: 8px;
+            text-align: center;
+            
+
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Pagina Turística del Ecuador</h1>
+    </header>
+    <nav>
+        <ul>
+            <li>
+                <a href="index.html">Inicio</a>
+                <a href="lugares.html">Lugares Turísticos</a>
+            </li>
+        </ul>
+    </nav>
+    <main>
+        <div class="contenedor"> 
+            <section class="izq">
+                <section class="b">
+                    <h2>Lugares Turísticos</h2>
+                </section>
+                <figure>
+                <img src="src/collage2 (1).png" alt="collage" usemap="#mapaEstampilla">
+
+                <map name="mapaEstampilla">
+                    <area shape="rect" coords="12,51,216,262" href="plaza.html" alt="Plaza">
+                    <area shape="rect" coords="228,51,426,262" href="volcan.html" alt="Volcán">
+                    <area shape="rect" coords="437,49,674,265" href="mitad.html" alt="Mitad del Mundo">
+                    <area shape="rect" coords="687,3,974,289" href="laguna.html" alt="Laguna">
+                    <area shape="rect" coords="14,383,216,621" href="isla.html" alt="Isla">
+                    <area shape="rect" coords="228,385,426,615" href="cajas.html" alt="Cajas">
+                    <area shape="rect" coords="442,331,974,649" href="turi.html" alt="Turi">
+                </map>
+            </figure>
+            </section>
+            <section class="dere">
+                <form action="resultado.php" method="post">
+                    <fieldset>
+                        <legend><mark>Datos</mark></legend>
+                        <div class="label">
+                            <label for="">Nombre: </label><br><br>
+                            <label for="">Edad: </label><br><br>
+
+                        </div>
+                        <div class="input">
+                            <input type="text" name="nombre" required><br><br>
+                            <input type="number" name="edad" required><br><br>
+                        </div>
+                        <mark><label for="">Lugar Turístico</label></mark> <br><br>
+
+                        <input type="radio" id="radio-flores" name="destino" value="plaza">
+                        <label for="radio-flores">Plaza Flores</label><br><br>
+
+                        <input type="radio" id="radio-cotopaxi" name="destino" value="cotopaxi">
+                        <label for="radio-cotopaxi">Cotopaxi</label><br><br>
+
+                        <input type="radio" id="radio-mitad" name="destino" value="mitad">
+                        <label for="radio-mitad">Mitad del Mundo</label><br><br>
+
+                        <input type="radio" id="radio-quilotoa" name="destino" value="quilotoa">
+                        <label for="radio-quilotoa">Quilotoa</label><br><br>
+
+                        <input type="radio" id="radio-galapagos" name="destino" value="galapagos">
+                        <label for="radio-galapagos">Galápagos</label><br><br>
+
+                        <input type="radio" id="radio-cajas" name="destino" value="cajas">
+                        <label for="radio-cajas">El Cajas</label><br><br>
+
+                        <input type="radio" id="radio-turi" name="destino" value="turi">
+                        <label for="radio-turi">Turi</label><br><br>
+
+                        <input type="submit" name="Enviar">
+                    </fieldset>
+                </form>
+            </section>
+        </div>
+        
+    </main>
+    <footer>
+        <p>Derechos Reservados - 2026</p>
+    </footer>
+</body>
+</html>
