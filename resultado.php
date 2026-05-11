@@ -113,9 +113,9 @@ if(isset($_POST['destino'])){
             font-size: 20px;
 
         }
-        a:hover{
+        /*a:hover{
             text-decoration: underline;
-        }
+        }*/
         main{
             height: 100%;
             background-color: #ffffff;
@@ -242,6 +242,9 @@ if(isset($_POST['destino'])){
                 <?php if($nombreUsuario != '') { ?>
                     <p><strong>Nombre:</strong> <?php echo $nombreUsuario; ?></p>
                     <p><strong>Edad:</strong> <?php echo $edadUsuario; ?></p>
+                    <p><strong>Destino elegido:</strong> <?php echo $nombreLugar; ?></p>
+                    <p><strong>Estado de registro:</strong> Confirmado</p>
+                    <p><strong>Fecha:</strong> <?php echo date("d/m/Y"); ?></p>
                 <?php } ?>
             </section>
         </div>
